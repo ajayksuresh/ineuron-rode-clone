@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+          theme: {
+            screens:{
+                    sm: '300px',
+                    md: '786px',
+                    lg: '976px',
+                    xl: '1440px'
+                },
+            extend: {
+                colors: {
+                offwhite: 'hsla(0,0%,100%,.5)',
+                cream: '#ad9970', // use for learn more and buy now bg
+                greyish: '#rgba(0,0,0,.5)!', //second & third image para
+                silver: '#767676', //explore the rode rage
+                lightgrey:  '#42474C',
+                darkgreen: '#008060', //for 1st button
+                green: '#004c3f', 
+                
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+      <div class="flex flex-row mt-12 ml-24">
+          <div class="w-fit">
+              <img class="py-2" src="assets/RODE_Logo_87x51_RGB.svg" alt="Your Company" width="105px">
+          </div>
+          <div class="hidden md:flex w-3/4 justify-around flex-wrap lg:flex-nowrap">
+            <div type="button" class="inline-flex w-full justify-center items-center px-3 py-2 text-xl font-normal shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                PRODUCTS
+            </div>
+            <div type="button" class="inline-flex w-full justify-center items-center px-3 py-2 text-xl font-normal shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                USER GUIDES
+            </div>
+            <div type="button" class="inline-flex w-full justify-center items-center px-3 py-2 text-xl font-normal shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                SOLUTIONS
+            </div>
+            <div type="button" class="inline-flex w-full justify-center items-center px-3 py-2 text-xl font-normal shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                APPAREL
+            </div>
+            <div type="button" class="inline-flex w-full justify-center items-center px-3 py-2 text-xl font-normal shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                SUPPORT
+            </div>
+          </div>
+          
+          <i class="fa-solid fa-magnifying-glass fa-2x ml-24"></i>
+      </div>
+        
+        <!-- Navigation ends here  mr-44 md:justify-end text-center pt-24 md:pt-0-->
+        <!-- main content  class="w-max md:w-1/2"-->
+
+      <section class="hero-section text-center">
+        <div class="background-image w-auto md:w-3/2 lg:w-full h-screen bg-no-repeat bg-right bg-cover md:bg-auto md:bg-center" style="background-image: url('assets/1-rode-complete.jpg')">
+          <div class="hero-content flex flex-col justify-center h-full ml-12 pl-0 lg:ml-96 lg:pl-96">
+            <img src="assets/2-rodecaster-pro.svg" alt="" class="w-3/4 ml-0 lg:ml-24">
+            <h1 class="text-white font-normal text-3xl mt-8">
+              The Revolution Is Here
+            </h1>
+            <p class="text-offwhite w-3/4 ml-0 lg:ml-24 text-2xl mt-4">
+              The RØDECaster Pro II is the world's most powerful all-in-one audio solution for streamers, podcasters, musicians, and creators. Take your content to the next level.
+            </p>
+            <div class="flex ml-0 md:ml-36 mt-12">
+              <h1 class="text-cream text-2xl ml-0 md:ml-44">
+                LEARN MORE <i class="fa-solid fa-chevron-right py-4 mr-6 text-cream text-2xl"></i>
+              </h1>
+              <button class="bg-cream text-lg font-medium text-white py-2 px-8 rounded-full hover:bg-white hover:text-black duration-100">
+                BUY NOW
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="lg:bg-[url('assets/4-NTH-bgi.jpg')] bg-cover bg-center bg-no-repeat lg:h-[95vh] h-full w-full">
+        <div class="md:w-4/5 w-full mx-auto flex flex-row items-center h-full flex-wrap flex-row-reverse">
+          <div class="lg:w-1/2 w-full">
+            <img src="assets/3-NTH-100.svg" alt="img" class="hidden">
+          </div>
+          <div class="lg:w-1/2 w-full text-center mt-4 lg:mt-0 py-8 md:px-0 px-4">
+            <img src="assets/3-NTH-100.svg" alt="img" class="h-10 mx-auto">
+            <h2 class="mt-8 text-3xl w-3/2 mx-auto text-black">
+              Your Search For The Perfect Headphones Is Over
+            </h2>
+            <p class="mt-2 opacity-70 text-2xl text-black opacity-70 w-[90%] mx-auto">
+              Experience sound like never before with the NTH-100s. Exceptional
+              sonic performance, superior comfort and iconic looks that inspires
+              creativity.
+            </p>
+            <div class="flex justify-center md:mt-12 mt-4 space-x-4">
+              <button class="text-cream font-medium text-lg text-2xl flex items-center">
+                <p>LEARN MORE</p>
+                <i class="fas fa-chevron-right ml-2" aria-hidden="true"> </i>
+              </button>
+              <button class="bg-cream text-lg font-medium text-white py-4 px-8 rounded-full hover:bg-white hover:text-black duration-100">
+                BUY NOW
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="py-6 text-6xl text-center font-semibold text-black opacity-70">
+        Explore The RØDE Range
+      </h2>
+      <div class="w-4/5 ml-auto ar-auto">
+        <div class="my-8 filter-main-box relative cursor-pointer">
+          <img src="assets/7-microphones.png" alt="img">
+          <div class="myFilter absolute h-full w-full top-0 duration-200"></div>
+          <div class="absolute h-full w-full flex items-center justify-center top-0">
+            <h2 class="text-white lg:text-7xl md:text-5xl text-2xl font-medium">
+              MICROPHONES
+            </h2>
+          </div>
+        </div>
+        <div class="my-8 filter-main-box relative cursor-pointer">
+          <img src="assets/8-interfaces&mixers.jpg" alt="img">
+          <div class="myFilter absolute h-full w-full top-0 duration-200"></div>
+          <div class="absolute h-full w-full flex items-center justify-center top-0">
+            <h2 class="text-white lg:text-7xl md:text-5xl text-2xl font-medium">
+              INTERFACES &amp; MIXERS
+            </h2>
+          </div>
+        </div>
+        <div class="my-8 filter-main-box relative cursor-pointer">
+          <img src="assets/9-softwares.png" alt="img">
+          <div class="myFilter absolute h-full w-full top-0 duration-200"></div>
+          <div class="absolute h-full w-full flex items-center justify-center top-0">
+            <h2 class="text-white lg:text-7xl md:text-5xl text-2xl font-medium">
+              SOFTWARES
+            </h2>
+          </div>
+        </div>
+        <div class="my-8 filter-main-box relative cursor-pointer">
+          <img src="assets/10-accessories.png" alt="img">
+          <div class="myFilter absolute h-full w-full top-0 duration-200"></div>
+          <div class="absolute h-full w-full flex items-center justify-center top-0">
+            <h2 class="text-white lg:text-7xl md:text-5xl text-2xl font-medium">
+              ACCESSORIES
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-black p-12">
+        <div class="flex flex-col md:flex-row items-center ml-40 mt-10 justify-between md:mt-32">
+              <!-- image  -->
+              <div class=" md:w-1/2">
+                  <img src="assets/12-woman.jpg" alt="">
+              </div>
+              <!-- Right item  -->
+              <div class="flex flex-col mb-32 space-y-12 md:w-1/2 justify-center align-center">
+                  <h1 class="text-white font-normal tracking-tight sm:text-5xl md:text-4xl pt-20 mt-16">
+                    Content Creation Made Easy
+                  </h1>
+                  <p class="text-gray-500 sm:mt-5 sm:max-w-xl sm:text-lg md:mt-12 md:text-2xl font-bold">No matter what kind of content you’re creating, the RØDECaster Pro II makes recording incredible audio incredibly simple. Get set up in seconds. Navigate and control every feature with ease. Achieve pro-quality audio processing with the twist of a knob. Exceptional audio, no experience required.
+                  </p>        
+              </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row items-center ml-40 mt-10 justify-between md:mt-32">
+          <!-- Right item  -->
+          <div class="flex flex-col mb-32 space-y-12 md:w-1/2 justify-center align-center">
+              <h1 class="text-white font-normal tracking-tight sm:text-5xl md:text-4xl pt-20 mt-16">
+                Sound Incredible Every Time You Hit Record
+              </h1>
+              <p class="text-gray-500 sm:mt-5 sm:max-w-xl sm:text-lg md:mt-12 md:text-2xl font-bold">The RØDECaster Pro II is expertly crafted to make you sound incredible every time you hit record. Every feature serves to elevate your audio and inspire you to create content you never thought possible.
+              </p>        
+          </div>
+          <!-- image  -->
+          <div class=" md:w-1/2">
+            <img src="assets/11-man.jpeg" alt="">
+          </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row items-center ml-40 mt-10 justify-between md:mt-32">
+              <!-- image  -->
+              <div class=" md:w-1/2">
+                  <img src="assets/10-girl.jpg" alt="">
+              </div>
+              <!-- Right item  -->
+              <div class="flex flex-col mb-32 space-y-12 md:w-1/2 justify-center align-center">
+                  <h1 class="text-white font-normal tracking-tight sm:text-5xl md:text-4xl pt-20 mt-16">
+                    Customise to Your Creative Vision
+                  </h1>
+                  <p class="text-gray-500 sm:mt-5 sm:max-w-xl sm:text-lg md:mt-12 md:text-2xl font-bold">Every stream, every podcast, every song is different. The RØDECaster Pro II understands this and can adapt to your creative vision. Customise it to suit your content, setup, workflow (even if that's constantly changing).
+                  </p>        
+              </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row items-center ml-40 mt-10 justify-between md:mt-32">
+          <!-- Right item  -->
+          <div class="flex flex-col mb-32 space-y-12 md:w-1/2 justify-center align-center">
+              <h1 class="text-white font-normal tracking-tight sm:text-5xl md:text-4xl pt-20 mt-16">
+                Connect With Your Audience
+              </h1>
+              <p class="text-gray-500 sm:mt-5 sm:max-w-xl sm:text-lg md:mt-12 md:text-2xl font-bold">
+                Your audience is more likely to connect with incredible sounding, unique content. Unlock your full potential and give them the audio they deserve with the RØDECaster Pro II.
+              </p>        
+          </div>
+          <!-- image  -->
+          <div class=" md:w-1/2">
+            <img src="assets/audience.jpg" alt="">
+          </div>
+        </div>
+
+
+        <div class="flex flex-col md:flex-row items-center ml-40 mt-10 justify-between md:mt-32">
+          <!-- image  -->
+          <div class=" md:w-1/2">
+              <img src="assets/workflow.jpg" alt="">
+          </div>
+          <!-- Right item  -->
+          <div class="flex flex-col mb-32 space-y-12 md:w-1/2 justify-center align-center">
+              <h1 class="text-white font-normal tracking-tight sm:text-5xl md:text-4xl pt-20 mt-16 ml-12">
+                Streamline Your Workflow
+              </h1>
+              <p class="text-gray-500 sm:mt-5 sm:max-w-xl sm:text-lg md:mt-12 md:text-2xl font-bold ml-12">The RØDECaster Pro II offers unrivalled connectivity with all your devices, unlocking more creative possibilities, more streamlined workflows, and easier integration with other equipment than ever before. The perfect audio control centre for any creator.
+              </p>        
+          </div>
+        </div>
+
+      </div>
+
+
+      <footer class="border-lightgray-400 py-8 mt-8">
+          <div class="lg:flex-row flex-col py-8">
+            <div class="lg:w-3/4 w-full flex lg:flex-row flex-col">
+              <div class="lg:pr-12 pr-0">
+                <img src="assets/RODE_black_logo.svg" alt="img" class="py-4 lg:py-0 mx-auto lg:ml-32">
+              </div>
+              <div class="w-full flex justify-center">
+                <ul class="px-0 text-2xl">
+                  <li class="font-medium">Products</li>
+                  <li class="mt-2 text-black opacity-80 hover:opacity-100 duration-150 cursor-pointer">
+                    Microphones
+                  </li>
+                  <li class="mt-2 text-black opacity-80 hover:opacity-100 duration-150 cursor-pointer">
+                    Headphones
+                  </li>
+                  <li class="mt-2 text-black opacity-80 hover:opacity-100 duration-150 cursor-pointer">
+                    Interfaces and Mixers
+                  </li>
+                  <li class="mt-2 text-black opacity-80 hover:opacity-100 duration-150 cursor-pointer">
+                    Accessories
+                  </li>
+                  <li class="mt-2 text-black opacity-80 hover:opacity-100 duration-150 cursor-pointer">
+                    Software
+                  </li>
+                  <li class="mt-2 text-black opacity-80 hover:opacity-100 duration-150 cursor-pointer">
+                    Apparel
+                  </li>
+                </ul>
+                <ul class="px-6 text-2xl">
+                  <li class="font-medium mb-4">Support</li>
+                  <li class="mt-2 text-black opacity-80 hover:opacity-100 duration-150 cursor-pointer">
+                    Contact RØDE
+                  </li>
+                  <li class="mt-2 text-black opacity-80 hover:opacity-100 duration-150 cursor-pointer">
+                    Service Centre
+                  </li>
+                  <li class="mt-2 text-black opacity-80 hover:opacity-100 duration-150 cursor-pointer">
+                    Warranty
+                  </li>
+                  <li class="mt-2 text-black opacity-80 hover:opacity-100 duration-150 cursor-pointer">
+                    Where to Buy
+                  </li>
+                </ul>
+                <ul class="px-6 text-2xl">
+                  <li class="font-medium mb-4">Company</li>
+                  <li class="mt-2 text-black opacity-80 hover:opacity-100 duration-150 cursor-pointer">
+                    About RØDE
+                  </li>
+                  <li class="mt-2 text-black opacity-80 hover:opacity-100 duration-150 cursor-pointer">
+                    News and Info
+                  </li>
+                  <li class="mt-2 text-black opacity-80 hover:opacity-100 duration-150 cursor-pointer">
+                    Job Opportunities
+                  </li>
+                  <li class="font-medium my-4">Account</li>
+                  <li class="mt-2 text-black opacity-80 hover:opacity-100 duration-150 cursor-pointer">
+                    Manage your Account
+                  </li>
+                  <li class="mt-2 text-black opacity-80 hover:opacity-100 duration-150 cursor-pointer">
+                    Create Account
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="">
+              <h2 class="w-3/2 lg:text-right text-center font-semibold text-3xl opacity-80">
+                Subscribe to our latest news and offers
+              </h2>
+              <div class="mt-4 lg:text-right text-center">
+                <button class="py-2 px-5 bg-cream rounded-full text-white border-2 border-mybrown duration-200 hover:bg-white hover:text-mybrown">
+                  Sign Up
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex justify-between lg:flex-row flex-col space-y-4 lg:space-y-0 items-center pt-4 border-t-[1px] border-lightgray-400">
+            <p class="text-sm cursor-pointer lg:order-0 order-2 mt-4 lg:mt-0">
+              © 2022 RØDE All Rights Reserved.
+            </p>
+            <ul class="flex justify-between lg:order-1 order-0">
+              <li class="text-xs mx-2">Privacy Policy</li>
+              <li class="text-xs mx-2 border-l-2 border-gray-500 pl-2">
+                Terms &amp; Conditions
+              </li>
+            </ul>
+            <div class="lg:order-2 order-1">
+              <i class="fab fa-facebook text-mybrown text-3xl lg:ml-4 ml-6 cursor-pointer" aria-hidden="true"></i>
+              <i class="fab fa-twitter text-mybrown text-3xl lg:ml-4 ml-6 cursor-pointer" aria-hidden="true"></i>
+              <i class="fab fa-instagram text-mybrown text-3xl lg:ml-4 ml-6 cursor-pointer" aria-hidden="true"></i>
+              <i class="fab fa-youtube text-mybrown text-3xl lg:ml-4 ml-6 cursor-pointer" aria-hidden="true"></i>
+              <i class="fab fa-tiktok text-mybrown text-3xl lg:ml-4 ml-6 cursor-pointer" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
